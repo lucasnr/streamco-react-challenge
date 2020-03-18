@@ -14,6 +14,7 @@ export const Cover = styled.div`
 		props.image ? `url(${props.image})` : `url(${background})`};
 	background-position: center;
 	background-repeat: no-repeat;
+	background-size: ${props => (props.image ? 'cover' : 'auto')};
 	height: 244px;
 	width: 100%;
 `;
